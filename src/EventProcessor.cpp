@@ -30,6 +30,8 @@ void EventProcessor::processEvents(const std::vector<Event>& events) {
         for (const auto& particle : events[i].particles) {
             tracks++;
             energy += particle.energy();
+            tracks += 1;
+            energy += particle.energy();
         }
     }
 
